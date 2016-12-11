@@ -1,0 +1,17 @@
+{
+  "name": "3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CharClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "./node_modules/.bin/babel-node ChatClient.js",
+    "server": "./node_modules/.bin/babel-node ChatServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
+  }
+}

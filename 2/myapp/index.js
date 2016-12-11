@@ -5,7 +5,6 @@ const app = express()
 
 app.use(cookieParser());
 app.use(express.static('public'));
-//app.METHOD(PATH, HANDLER)
 
 app.use(function BasicLogger (req, res, next) {
 	console.log('logging...');
@@ -17,6 +16,8 @@ app.use(function TimeLogger (req, res, next) {
 	console.log('Request time: ' + Date.now());
 	next();
 });
+
+//app.METHOD(PATH, HANDLER)
 
 app.get('/', function GetHome (req, res) {
 	res.send('Hello World! Requested at: ' + req.requestTime);
